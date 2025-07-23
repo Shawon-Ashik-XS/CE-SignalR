@@ -8,7 +8,6 @@ namespace CE_FbWebhook
     {
         void Main(string[] args)
         {
-            //CreateWebHostBuilder(args).Build().Run();
             Console.WriteLine("called");
         }
     }
