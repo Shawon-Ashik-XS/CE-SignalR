@@ -10,11 +10,6 @@ namespace CE_FbWebhook
 {
     public class WebHookHub : Hub
     {
-        //public WebHookHub()
-        //{
-
-        //}
-
         void Main(string[] args)
         {
             string v = Webhook("", "", "");
@@ -37,14 +32,5 @@ namespace CE_FbWebhook
             await Clients.All.SendAsync("ReceiveMessage", userName, message);
         }
 
-        //public Task SendMessageToCaller(string message)
-        //{
-        //    return Clients.Caller.SendAsync("ReceiveMessage", message);
-        //}
-
-        //public Task SendMessageToGroup(string message)
-        //{
-        //    return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
-        //}
     }
 }
